@@ -1,11 +1,11 @@
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle");
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-    });
+    // document.addEventListener('DOMContentLoaded', (event) => {
+    //     document.addEventListener('contextmenu', function(e) {
+    //         e.preventDefault();
+    //     });
+    // });
 
     navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("open");

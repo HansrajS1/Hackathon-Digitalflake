@@ -275,7 +275,7 @@ main span img:hover {
 .project div {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
