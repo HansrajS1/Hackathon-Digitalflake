@@ -358,6 +358,11 @@ textarea {
     height: 100px;
     resize: none;
 }
+
+.project1 {
+    width: 400px;
+}
+
 .submit {
     padding: 10px;
     background-color: #ffffff;
@@ -595,6 +600,9 @@ footer {
     textarea {
         width: 75vw;
     }
+    .project1 {
+        width: 200px;
+    }
     .project {
         flex-direction: column;
     }
@@ -616,6 +624,9 @@ footer {
     section.first>div :nth-child(2) {
         font-size: 13px;
         width: 250px;
+    }
+    .project1 {
+        width: 150px;
     }
     .project,
     .project div {
@@ -647,4 +658,5 @@ footer {
     .social-icons {
         margin: 9px 0px 11px 0;
     }
+
 }
