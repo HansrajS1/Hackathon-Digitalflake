@@ -11,7 +11,7 @@ const Hero = () => {
       className="min-h-screen flex items-center bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="container mx-auto mt-20 px-4 flex flex-col md:flex-row items-center justify-around text-white">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-around text-white">
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             Hello, <br /> I'm <span className="text-cyan-400">Hans Raj</span>

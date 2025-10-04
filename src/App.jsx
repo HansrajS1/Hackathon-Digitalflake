@@ -8,17 +8,18 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BottomNav from './components/BottomNav';
 
 function App() {
-  useEffect(() => {
-    const handleContextMenu = (event) => {
-      event.preventDefault();
-    }; 
-    document.addEventListener('contextmenu', handleContextMenu);
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []); 
+  // useEffect(() => {
+  //   const handleContextMenu = (event) => {
+  //     event.preventDefault();
+  //   }; 
+  //   document.addEventListener('contextmenu', handleContextMenu);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []); 
   return (
     <div className="bg-black">
       <Navbar />
@@ -32,6 +33,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <BottomNav />
     </div>
   );
 }
