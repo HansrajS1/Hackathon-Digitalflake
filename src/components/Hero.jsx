@@ -44,10 +44,10 @@ const Hero = () => {
           >
             View Resume
           </a>
-          <div className="flex justify-center md:justify-start space-x-6 mt-8">
-            {/* ✓ UPDATED: Added scale and translate effects to social icons */}
+          <div className="flex justify-center md:justify-start space-x-6 mt-8">\
             <a
               href="https://leetcode.com/u/hansraj61/"
+              aria-label="View LeetCode Profile"
               target="_blank"
               className="text-3xl hover:text-cyan-400 hover:scale-125 hover:-translate-y-1 transition-all duration-300"
             >
@@ -55,6 +55,7 @@ const Hero = () => {
             </a>
             <a
               href="https://github.com/HansrajS1"
+              aria-label="View GitHub Profile"
               target="_blank"
               className="text-3xl hover:text-cyan-400 hover:scale-125 hover:-translate-y-1 transition-all duration-300"
             >
@@ -62,6 +63,7 @@ const Hero = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/hansrajvvs"
+              aria-label="View LinkedIn Profile"
               target="_blank"
               className="text-3xl hover:text-cyan-400 hover:scale-125 hover:-translate-y-1 transition-all duration-300"
             >
@@ -70,6 +72,7 @@ const Hero = () => {
             <a
               href="https://www.hackerrank.com/profile/rhansbtech22"
               target="_blank"
+              aria-label="View HackerRank Profile"
               className="text-3xl hover:text-cyan-400 hover:scale-125 hover:-translate-y-1 transition-all duration-300"
             >
               <FaHackerrank />
@@ -78,7 +81,6 @@ const Hero = () => {
         </div>
 
         <div className="md:w-1/3">
-          {/* ✓ UPDATED: Added scale, border, and shadow effects to the profile picture */}
           <img
             src={profilePic}
             alt="Hans Raj"

@@ -79,7 +79,6 @@ const Education = () => {
       className="py-20 bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${educationBgImage})` }}
     >
-      {/* ✓ 2. ADD THE OVERLAY TO THE CONTAINER FOR READABILITY */}
       <div className="container mx-auto px-4 bg-black/60 backdrop-blur-sm py-10 rounded-xl">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">My <span className="text-cyan-400">Education</span></h2>
         
