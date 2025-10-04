@@ -6,9 +6,10 @@ import backgroundImage from "../assets/images/background1.jpg";
 
 const Hero = () => {
   return (
+    // ✓ UPDATED: Replaced 'min-h-screen' with stable padding to fix mobile layout jumps
     <section
       id="home"
-      className="min-h-screen flex items-center bg-cover bg-center bg-fixed"
+      className="flex flex-col justify-center bg-cover bg-center bg-fixed pt-40 pb-20"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-around text-white">
@@ -20,16 +21,11 @@ const Hero = () => {
             I Am Into{" "}
             <TypeAnimation
               sequence={[
-                "Web Development.",
-                2000,
-                "AI & ML.",
-                2000,
-                "Machine Learning.",
-                2000,
-                "Deep Learning.",
-                2000,
-                "Backend Development.",
-                2000,
+                "Web Development.", 2000,
+                "AI & ML.", 2000,
+                "Machine Learning.", 2000,
+                "Deep Learning.", 2000,
+                "Backend Development.", 2000,
               ]}
               wrapper="span"
               speed={50}
@@ -37,14 +33,17 @@ const Hero = () => {
               repeat={Infinity}
             />
           </div>
+          
+          {/* ✓ UPDATED: Corrected the link to the resume */}
           <a
-            href="src/assets/Resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             className="inline-block bg-cyan-500 text-black font-bold py-3 px-8 rounded-full hover:bg-cyan-400 transition duration-300 text-lg shadow-lg"
           >
             View Resume
           </a>
-          <div className="flex justify-center md:justify-start space-x-6 mt-8">\
+          
+          <div className="flex justify-center md:justify-start space-x-6 mt-8">
             <a
               href="https://leetcode.com/u/hansraj61/"
               aria-label="View LeetCode Profile"
@@ -80,7 +79,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="md:w-1/3">
+        <div className="md:w-1/3 mt-10 md:mt-0">
           <img
             src={profilePic}
             alt="Hans Raj"

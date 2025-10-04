@@ -21,7 +21,7 @@ function App() {
     };
   }, []); 
   return (
-    <div className="bg-black">
+    <div className="bg-black pb-24 md:pb-0 overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
