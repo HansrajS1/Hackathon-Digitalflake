@@ -256,7 +256,10 @@
                 </div>
             </div>
             </div>
-            <p  class="footer-bottom-text">© 2024 HANS RAJ </p>
+            <p class="footer-bottom-text">© <span id="current-year"></span> HANS RAJ </p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
 </footer>
 </body>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
