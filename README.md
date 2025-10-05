@@ -1,16 +1,74 @@
-# React + Vite
+# Hans Raj | AI & ML Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-hansrajvvs-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/hansrajvvs)
+[![GitHub](https://img.shields.io/badge/GitHub-HansrajS1-black?style=for-the-badge&logo=github)](https://github.com/HansrajS1)
+[![Website](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=netlify)](https://hansrajvvs.me/)
 
-Currently, two official plugins are available:
+This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a developer specializing in AI and Machine Learning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Portfolio Screenshot](https://hansrajvvs.me/social-preview.jpg)
 
-## React Compiler
+---
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Fully Responsive Design**: A seamless experience on all devices, featuring a full-width header for desktops and a sleek, app-like bottom navigation bar for mobile.
+- **Interactive & Animated UI**: Built with **Framer Motion** to create engaging user interactions, including parallax backgrounds and 3D "magnetic" cards that react to the user's cursor.
+- **Dynamic Content**: Sections for skills, education, certifications, and projects are dynamically rendered from data arrays for easy updates.
+- **Functional Contact Form**: Integrated with **EmailJS** to handle form submissions securely without a backend server.
+- **SEO Optimized**: Fully optimized for search engines with proper meta tags, a sitemap, and structured data, ensuring high visibility on Google.
 
-## Expanding the ESLint configuration
+---
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio was built from the ground up using a modern, performant tech stack:
+
+- **Framework**: [**React**](https://reactjs.org/)
+- **Build Tool**: [**Vite**](https://vitejs.dev/)
+- **Styling**: [**Tailwind CSS**](https://tailwindcss.com/)
+- **Animations**: [**Framer Motion**](https://www.framer.com/motion/)
+- **Icons**: [**React Icons**](https://react-icons.github.io/react-icons/)
+- **Email Service**: [**EmailJS**](https://www.emailjs.com/)
+
+---
+## 🚀 How to Run Locally
+
+To run this project on your local machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/HansrajS1/Portfolio-profile
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Portfolio-profile
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Create a `.env` file** in the root of the project to store your EmailJS credentials:
+    ```
+    VITE_YOUR_SERVICE_ID=your_service_id_here
+    VITE_YOUR_TEMPLATE_ID=your_template_id_here
+    VITE_YOUR_PUBLIC_KEY=your_public_key_here
+    ```
+
+5.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:5173`.
+
+---
+## Contact
+
+- **Email**: hansrajvvs@gmail.com
+- **Website**: [hansrajvvs.me](https://hansrajvvs.me/)
+
+---
+
+**© 2025 HANS RAJ**
