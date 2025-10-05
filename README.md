@@ -11,7 +11,7 @@ This repository contains the source code for my personal portfolio website, desi
 # Live Link : [HANS RAJ](https://hansrajvvs.me/)
 
 ---
-## ✨ Features
+##  Features
 
 - **Fully Responsive Design**: A seamless experience on all devices, featuring a full-width header for desktops and a sleek, app-like bottom navigation bar for mobile.
 - **Interactive & Animated UI**: Built with **Framer Motion** to create engaging user interactions, including parallax backgrounds and 3D "magnetic" cards that react to the user's cursor.
@@ -20,7 +20,7 @@ This repository contains the source code for my personal portfolio website, desi
 - **SEO Optimized**: Fully optimized for search engines with proper meta tags, a sitemap, and structured data, ensuring high visibility on Google.
 
 ---
-## 🛠️ Tech Stack
+##  Tech Stack
 
 This portfolio was built from the ground up using a modern, performant tech stack:
 
@@ -32,7 +32,7 @@ This portfolio was built from the ground up using a modern, performant tech stac
 - **Email Service**: [**EmailJS**](https://www.emailjs.com/)
 
 ---
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 To run this project on your local machine, follow these steps:
 
