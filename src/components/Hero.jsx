@@ -6,7 +6,6 @@ import backgroundImage from "../assets/images/background1.jpg";
 
 const Hero = () => {
   return (
-    // ✓ UPDATED: Replaced 'min-h-screen' with stable padding to fix mobile layout jumps
     <section
       id="home"
       className="flex flex-col justify-center bg-cover bg-center bg-fixed pt-40 pb-20"
@@ -34,7 +33,6 @@ const Hero = () => {
             />
           </div>
           
-          {/* ✓ UPDATED: Corrected the link to the resume */}
           <a
             href="/Resume.pdf"
             target="_blank"
