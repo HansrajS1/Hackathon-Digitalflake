@@ -12,7 +12,7 @@ const projects = [
     description:
       "A full-stack mobile application for uploading and managing academic papers, built for Alliance University Students.",
     imageUrl: project1,
-    liveUrl: "https://auexamapp.netlify.app/",
+    liveUrl: "http://auexamapp.tech/",
     codeUrl: "https://github.com/HansrajS1/Au-Exam-App",
   },
   {
