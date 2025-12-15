@@ -12,6 +12,12 @@ import skill9 from "../assets/images/git.png";
 import skill10 from "../assets/images/Github.png";
 import skill11 from "../assets/images/TensorFlow.png";
 import skill12 from "../assets/images/springboot.png";
+import skill13 from "../assets/images/nodejs.png";
+import skill14 from "../assets/images/express-js.png";
+import skill15 from "../assets/images/postgresql.png";
+import skill16 from "../assets/images/docker.png";
+import skill17 from "../assets/images/kubernetes.png";
+import skill18 from "../assets/images/azure.png";
 import skillsBgImage from "../assets/images/background2.jpg";
 
 const skillsData = [
@@ -19,14 +25,21 @@ const skillsData = [
   { name: "CSS", icon: skill2 },
   { name: "JavaScript", icon: skill3 },
   { name: "React", icon: skill4 },
+  { name: "React Native", icon: skill4 },
   { name: "Python", icon: skill5 },
   { name: "Java", icon: skill6 },
   { name: "C++", icon: skill7 },
   { name: "MySQL", icon: skill8 },
+  { name: "PostgreSQL", icon: skill15 },
   { name: "Git", icon: skill9 },
   { name: "GitHub", icon: skill10 },
   { name: "TensorFlow", icon: skill11 },
   { name: "Spring Boot", icon: skill12 },
+  { name: "Node", icon: skill13 },
+  { name: "Express", icon: skill14 },
+  { name: "Docker", icon: skill16 },
+  { name: "Kubernetes", icon: skill17 },
+  { name: "Azure", icon: skill18 },
 ];
 
 const cardVariants = {
@@ -59,7 +72,7 @@ const Skills = () => {
               <img
                 src={skill.icon}
                 alt={skill.name}
-                className="w-16 h-16 mb-2"
+                className="w-11 h-11 mb-2"
               />
               <p className="text-white text-center font-semibold">
                 {skill.name}
