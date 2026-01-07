@@ -9,7 +9,6 @@ This project is a full-stack application built with React for the frontend and N
 - Category management (add, edit, delete)
 - Subcategory management (add, edit, delete)
 - Product management (add, edit, delete)
-- Search and filter functionality
 - Image upload with preview
 
 ## Tech Stack
@@ -20,6 +19,8 @@ This project is a full-stack application built with React for the frontend and N
 - Express.js
 - MongoDB
 - JWT Authentication
+- Multer Storage Cloudinary
+- Sendgrid
 
 ## Installation
 1. Clone the repository:
@@ -38,7 +39,6 @@ This project is a full-stack application built with React for the frontend and N
    JWT_SECRET=your_jwt_secret
    SENDGRID_API_KEY=your_sendgrid_api_key
    JWT_EXPIRE=7d
-   PORT=10000
    CLOUDINARY_CLOUD_NAME=CLOUDINARY_CLOUD_NAME
    CLOUDINARY_API_SECRET=CLOUDINARY_API_SECRET
    CLOUDINARY_API_KEY=CLOUDINARY_API_KEY
