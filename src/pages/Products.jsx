@@ -145,7 +145,7 @@ export default function Products() {
                 onClick={async () => {
                   try {
                     await fetch(
-                      `http://localhost:5000/api/product/${selectedId}`,
+                      `https://hackathon-digitalflake.onrender.com/api/product/${selectedId}`,
                       { method: "DELETE" }
                     );
                     setData((prev) =>

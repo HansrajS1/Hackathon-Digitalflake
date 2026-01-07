@@ -16,7 +16,7 @@ export default function AddProduct() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/category/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category/");
         const json = await res.json();
         setCategories(json);
       } catch (err) {
@@ -29,7 +29,7 @@ export default function AddProduct() {
   useEffect(() => {
     const fetchSubcategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/subcategory/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/subcategory/");
         const json = await res.json();
         setSubcategories(json);
       } catch (err) {
@@ -49,7 +49,7 @@ export default function AddProduct() {
         formData.append("image", image);
       }
 
-      const res = await fetch("http://localhost:5000/api/product", {
+      const res = await fetch("https://hackathon-digitalflake.onrender.com/api/product", {
         method: "POST",
         body: formData,
       });
