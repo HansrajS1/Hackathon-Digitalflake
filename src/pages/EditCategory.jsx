@@ -15,7 +15,7 @@ export default function EditCategory() {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/category/${id}`, {
+        const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/category/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -24,7 +24,7 @@ export default function EditCategory() {
         const json = await res.json();
         setName(json.name || "");
         setStatus(json.status || "Active");
-        setPreview(json.image ? `http://localhost:5000/${json.image}` : null);
+        setPreview(json.image ? `https://hackathon-digitalflake.onrender.com/${json.image}` : null);
       } catch (err) {
         console.error("Failed to fetch category:", err);
       }
@@ -41,7 +41,7 @@ export default function EditCategory() {
         formData.append("image", image);
       }
 
-      const res = await fetch(`http://localhost:5000/api/category/${id}`, {
+      const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/category/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

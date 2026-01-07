@@ -18,7 +18,7 @@ export default function EditProduct() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/product/${id}`, {
+        const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/product/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -30,7 +30,7 @@ export default function EditProduct() {
         setSubcategoryName(json.subcategory?.name || "");
         setStatus(json.status || "Active");
         // ✅ prepend server URL if needed
-        setPreview(json.image ? `http://localhost:5000/${json.image}` : null);
+        setPreview(json.image ? `https://hackathon-digitalflake.onrender.com/${json.image}` : null);
       } catch (err) {
         console.error("Failed to fetch product:", err);
       }
@@ -40,7 +40,7 @@ export default function EditProduct() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/category/", {
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category/", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -63,7 +63,7 @@ export default function EditProduct() {
       formData.append("status", status);
       if (image) formData.append("image", image);
 
-      const res = await fetch(`http://localhost:5000/api/product/${id}`, {
+      const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/product/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

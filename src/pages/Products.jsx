@@ -18,7 +18,7 @@ export default function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/product/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/product/");
         const json = await res.json();
         setData(json);
       } catch (err) {

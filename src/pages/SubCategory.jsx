@@ -18,7 +18,7 @@ export default function Subcategory() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/subcategory/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/subcategory/");
         const json = await res.json();
         setData(json);
       } catch (err) {
@@ -138,7 +138,7 @@ export default function Subcategory() {
                 onClick={async () => {
                   try {
                     await fetch(
-                      `http://localhost:5000/api/subcategory/${selectedId}`,
+                      `https://hackathon-digitalflake.onrender.com/api/subcategory/${selectedId}`,
                       { method: "DELETE" }
                     );
                     setData((prev) =>

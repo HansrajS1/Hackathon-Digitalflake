@@ -16,7 +16,7 @@ export default function EditSubCategory() {
   useEffect(() => {
     const fetchSubCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/subcategory/${id}`);
+        const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/subcategory/${id}`);
         const json = await res.json();
         setName(json.name);
         setCategoryId(json.category?._id || "");
@@ -32,7 +32,7 @@ export default function EditSubCategory() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/category/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category/");
         const json = await res.json();
         setCategories(json);
       } catch (err) {
@@ -52,7 +52,7 @@ export default function EditSubCategory() {
         formData.append("image", image);
       }
 
-      const res = await fetch(`http://localhost:5000/api/subcategory/${id}`, {
+      const res = await fetch(`https://hackathon-digitalflake.onrender.com/api/subcategory/${id}`, {
         method: "PUT",
         body: formData,
       });

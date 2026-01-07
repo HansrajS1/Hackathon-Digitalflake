@@ -14,7 +14,7 @@ export default function AddSubCategory() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/category/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category/");
         const json = await res.json();
         setCategories(json);
       } catch (err) {
@@ -33,7 +33,7 @@ export default function AddSubCategory() {
         formData.append("image", image);
       }
 
-      const res = await fetch("http://localhost:5000/api/subcategory", {
+      const res = await fetch("https://hackathon-digitalflake.onrender.com/api/subcategory", {
         method: "POST",
         body: formData,
       });

@@ -53,7 +53,7 @@ export default function Auth() {
 
   const handleForgot = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/auth/forgot-password", {
+      const res = await fetch("https://hackathon-digitalflake.onrender.com/api/auth/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

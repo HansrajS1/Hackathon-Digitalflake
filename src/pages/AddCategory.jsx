@@ -17,7 +17,7 @@ export default function AddCategory() {
         formData.append("image", image);
       }
 
-      const res = await fetch("http://localhost:5000/api/category", {
+      const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category", {
         method: "POST",
         body: formData,
       });

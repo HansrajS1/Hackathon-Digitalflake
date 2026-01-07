@@ -18,7 +18,7 @@ export default function Category() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/category/");
+        const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category/");
         const json = await res.json();
         setData(json);
       } catch (err) {
@@ -134,7 +134,7 @@ export default function Category() {
                 onClick={async () => {
                   try {
                     await fetch(
-                      `http://localhost:5000/api/category/${selectedId}`,
+                      `https://hackathon-digitalflake.onrender.com/api/category/${selectedId}`,
                       { method: "DELETE" }
                     );
                     setData((prev) =>
