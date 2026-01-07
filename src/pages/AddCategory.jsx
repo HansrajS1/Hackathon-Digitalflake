@@ -13,21 +13,20 @@ export default function AddCategory() {
     try {
       const formData = new FormData();
       formData.append("name", name);
-      if (image) {
-        formData.append("image", image);
-      }
+      if (image) formData.append("image", image);
 
-      const res = await fetch("https://hackathon-digitalflake.onrender.com/api/category", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(
+        "https://hackathon-digitalflake.onrender.com/api/category",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
         setMessage("Category added successfully!");
-        setTimeout(() => {
-          navigate("/category");
-        }, 1000);
+        setTimeout(() => navigate("/category"), 1000);
       } else {
         setMessage(data.message || "Failed to add category");
       }
@@ -43,13 +42,15 @@ export default function AddCategory() {
         <Link to="/category" className="p-2 text-2xl rounded hover:bg-gray-100">
           ←
         </Link>
-        <img src={categoryIcon} alt="Category" className="h-8 w-8" />
-        <h2 className="text-xl font-semibold">Add Category</h2>
+        <img src={categoryIcon} alt="Category" className="h-7 w-7 sm:h-8 sm:w-8" />
+        <h2 className="text-lg sm:text-xl font-semibold">Add Category</h2>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-sm max-w-4xl">
-        <div className="mb-6 w-[360px]">
-          <label className="block text-sm font-medium mb-1">Category Name</label>
+      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm max-w-4xl mx-auto">
+        <div className="mb-6 w-full sm:w-[360px]">
+          <label className="block text-sm font-medium mb-1">
+            Category Name
+          </label>
           <input
             type="text"
             placeholder="Enter category name"
@@ -59,10 +60,13 @@ export default function AddCategory() {
           />
         </div>
 
-        <div className="mb-12">
-          <label className="block text-sm font-medium mb-2">Upload Image</label>
-          <div className="flex gap-4">
-            <div className="w-32 h-32 border rounded flex items-center justify-center">
+        <div className="mb-10">
+          <label className="block text-sm font-medium mb-2">
+            Upload Image
+          </label>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="w-full sm:w-32 h-32 border rounded flex items-center justify-center">
               {image ? (
                 <img
                   src={URL.createObjectURL(image)}
@@ -73,7 +77,8 @@ export default function AddCategory() {
                 <span className="text-gray-400">Preview</span>
               )}
             </div>
-            <label className="w-32 h-32 border-2 border-dashed rounded flex flex-col items-center justify-center cursor-pointer hover:border-purple-600">
+
+            <label className="w-full sm:w-32 h-32 border-2 border-dashed rounded flex flex-col items-center justify-center cursor-pointer hover:border-purple-600">
               <input
                 type="file"
                 className="hidden"
@@ -87,19 +92,22 @@ export default function AddCategory() {
           </div>
         </div>
 
-        {message && (<p className="text-black-600 text-2xl text-center mb-4">{message}</p>)}
+        {message && (
+          <p className="text-center text-sm sm:text-base font-medium mb-4">
+            {message}
+          </p>
+        )}
 
-
-        <div className="flex justify-end gap-4">
+        <div className="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4">
           <button
             onClick={() => navigate("/category")}
-            className="px-6 py-2 border rounded-full text-gray-600 hover:bg-gray-50"
+            className="px-6 py-2 border rounded-full text-gray-600 hover:bg-gray-50 w-full sm:w-auto"
           >
             Cancel
           </button>
           <button
             onClick={handleSubmit}
-            className="px-6 py-2 bg-[#662671] text-white rounded-full hover:opacity-90"
+            className="px-6 py-2 bg-[#662671] text-white rounded-full hover:opacity-90 w-full sm:w-auto"
           >
             Save
           </button>
